@@ -38,7 +38,8 @@ app.post('/api/notes', (req, res) => {
     res.json(newNote);
 });
 
-// Start the server
+// Start the server with this port
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+

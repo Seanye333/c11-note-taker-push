@@ -87,6 +87,7 @@ const handleNoteDelete = (e) => {
 
   if (activeNote.id === noteId) {
     activeNote = {};
+    renderActiveNote(); // Clear the input fields
   }
 
   deleteNote(noteId).then(() => {
